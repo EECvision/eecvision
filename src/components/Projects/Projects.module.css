@@ -1,0 +1,84 @@
+.section {
+    padding: var(--gap-lg, 4rem) var(--gap);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: var(--gap);
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--gap);
+}
+
+.projectCard {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.imageContainer {
+    position: relative;
+    width: calc(100% + 2 * var(--gap));
+    margin: calc(-1 * var(--gap)) calc(-1 * var(--gap)) var(--gap) calc(-1 * var(--gap));
+    height: 200px;
+    background: var(--accents-2);
+    border-bottom: 1px solid var(--accents-2);
+}
+
+.projectImage {
+    object-fit: cover;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectTitle {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: var(--gap-half);
+}
+
+.projectDescription {
+    font-size: 0.875rem;
+    color: var(--accents-5);
+    line-height: 1.5;
+    margin-bottom: var(--gap);
+    flex: 1;
+}
+
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: var(--gap);
+}
+
+.techTag {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: var(--accents-2);
+    color: var(--accents-5);
+    font-weight: 500;
+}
+
+.projectLink {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--geist-foreground);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}

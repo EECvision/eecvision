@@ -1,0 +1,14 @@
+.wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  background: var(--geist-background);
+}
+
+.footerWrapper {
+  height: 274px;
+  width: 100%;
+  background: transparent;
+}
