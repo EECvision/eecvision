@@ -1,7 +1,7 @@
 import styles from "./Hero.module.css";
 import GridBackground from "../GridBackground/GridBackground";
 import { motion } from "framer-motion";
-import { ArrowRight, FileText } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -29,14 +29,6 @@ const Hero = () => {
           <button className={`${styles.button} ${styles.primaryButton}`}>
             Contact me <ArrowRight size={16} style={{ marginLeft: "8px" }} />
           </button>
-          <a
-            href="/resume.pdf"
-            download
-            className={`${styles.button} ${styles.secondaryButton}`}
-            aria-label="Download Resume"
-          >
-            <FileText size={16} style={{ marginRight: "8px" }} /> Resume
-          </a>
         </div>
       </motion.div>
     </section>

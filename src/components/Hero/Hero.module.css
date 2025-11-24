@@ -41,8 +41,37 @@
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: var(--gap-lg, 3rem) var(--gap);
+  }
+
   .title {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    margin-bottom: var(--gap);
+  }
+
+  .ctaContainer {
+    flex-direction: column;
+    width: 100%;
+    gap: var(--gap-half);
+  }
+
+  .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
   }
 }
 
@@ -71,6 +100,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
 }
 
 .primaryButton {
