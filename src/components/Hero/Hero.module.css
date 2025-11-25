@@ -110,11 +110,11 @@
 }
 
 /* Dark mode adjustment for title gradient */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .title {
     background: linear-gradient(to bottom, #ffffff 0%, #888888 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
-}
+} */

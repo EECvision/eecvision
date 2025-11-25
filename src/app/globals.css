@@ -19,7 +19,7 @@
   --font-sans: var(--font-geist-sans);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --geist-background: #000000;
     --geist-foreground: #ffffff;
@@ -27,7 +27,7 @@
     --accents-2: #333333;
     --accents-5: #888888;
   }
-}
+} */
 
 * {
   box-sizing: border-box;

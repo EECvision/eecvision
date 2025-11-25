@@ -10,6 +10,8 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const resumeUrl = "/Emmanuel_Ezeka_Resume.pdf";
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
@@ -26,7 +28,7 @@ const Navbar = () => {
           About
         </Link>
         <a
-          href="/Emmanuel_Ezeka_Resume.pdf"
+          href={resumeUrl}
           download
           className={styles.link}
           style={{ display: "flex", alignItems: "center", gap: "8px" }}
@@ -79,7 +81,7 @@ const Navbar = () => {
           About
         </Link>
         <a
-          href="/resume.pdf"
+          href={resumeUrl}
           download
           className={styles.mobileLink}
           onClick={toggleMenu}

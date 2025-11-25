@@ -13,11 +13,11 @@
   border-bottom: 1px solid var(--accents-2);
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   .navbar {
     background: rgba(0, 0, 0, 0.8);
   }
-}
+} */
 
 .logo {
   font-weight: 700;
