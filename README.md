@@ -107,7 +107,7 @@ Developed an asset generation tool with automated rarity calculation from layere
 Developed an automated disbursement system with employee payment management and comprehensive admin dashboard. Implemented risk mitigation features, compliance monitoring, and real-time payment processing with detailed reporting.
 
 **Stack:** React, TypeScript, Node.js
-
+<!--
 ---
 
 ### [Orki](https://money.orki.io)
@@ -116,7 +116,7 @@ Developed an automated disbursement system with employee payment management and 
 Building multi-currency payment infrastructure for seamless money transfer and currency conversion. Developed merchant payment collection system with integrated dashboards and secure transaction processing.
 
 **Stack:** React, TypeScript
-
+-->
 ---
 
 ### [Fracxn Carbon](https://carbon.fracxn.com)
