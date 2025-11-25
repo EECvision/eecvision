@@ -38,6 +38,9 @@
   color: var(--accents-5);
   font-size: 0.875rem;
   transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .link:hover {

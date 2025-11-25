@@ -1,131 +1,121 @@
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 64px;
-    padding: 0 var(--gap);
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--accents-2);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  padding: 0 var(--gap);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--accents-2);
 }
 
 @media (prefers-color-scheme: dark) {
-    .navbar {
-        background: rgba(0, 0, 0, 0.8);
-    }
+  .navbar {
+    background: rgba(0, 0, 0, 0.8);
+  }
 }
 
 .logo {
-    font-weight: 700;
-    font-size: 1.25rem;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    z-index: 101;
-    /* Ensure logo stays above mobile menu */
+  font-weight: 700;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 101;
+  /* Ensure logo stays above mobile menu */
 }
 
 .logoIcon {
-    width: 24px;
-    height: 24px;
-    background: var(--geist-foreground);
-    border-radius: 50%;
-    position: relative;
-}
-
-.logoIcon::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 0;
-    height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-bottom: 10px solid var(--geist-background);
+  width: 24px;
+  height: 24px;
+  background: var(--geist-foreground);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navLinks {
-    display: flex;
-    gap: var(--gap);
+  display: flex;
+  gap: var(--gap);
 }
 
 .link {
-    font-size: 0.875rem;
-    color: var(--accents-5);
-    transition: color 0.2s ease;
+  font-size: 0.875rem;
+  color: var(--accents-5);
+  transition: color 0.2s ease;
 }
 
 .link:hover {
-    color: var(--geist-foreground);
+  color: var(--geist-foreground);
 }
 
 /* Mobile Menu Styles */
 .hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 24px;
-    height: 24px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 101;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 101;
 }
 
 .hamburgerLine {
-    width: 24px;
-    height: 2px;
-    background: var(--geist-foreground);
-    border-radius: 2px;
-    transition: all 0.3s linear;
-    position: relative;
-    transform-origin: 1px;
+  width: 24px;
+  height: 2px;
+  background: var(--geist-foreground);
+  border-radius: 2px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
 }
 
 .mobileMenu {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 768px) {
-    .navLinks {
-        display: none;
-    }
+  .navLinks {
+    display: none;
+  }
 
-    .hamburger {
-        display: flex;
-    }
+  .hamburger {
+    display: flex;
+  }
 
-    .mobileMenu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: var(--geist-background);
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        top: 0;
-        left: 0;
-        transition: transform 0.3s ease-in-out;
-        transform: translateY(-100%);
-        z-index: 100;
-        gap: 2rem;
-    }
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--geist-background);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(-100%);
+    z-index: 100;
+    gap: 2rem;
+  }
 
-    .mobileMenuOpen {
-        transform: translateY(0);
-    }
+  .mobileMenuOpen {
+    transform: translateY(0);
+  }
 
-    .mobileLink {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--geist-foreground);
-    }
+  .mobileLink {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--geist-foreground);
+  }
 }

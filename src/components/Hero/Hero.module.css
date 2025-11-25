@@ -30,51 +30,6 @@
   line-height: 1.2;
 }
 
-/* Dark mode adjustment for title gradient */
-@media (prefers-color-scheme: dark) {
-  .title {
-    background: linear-gradient(to bottom, #ffffff 0%, #888888 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero {
-    padding: var(--gap-lg, 3rem) var(--gap);
-  }
-
-  .title {
-    font-size: 2.5rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: var(--gap);
-  }
-
-  .ctaContainer {
-    flex-direction: column;
-    width: 100%;
-    gap: var(--gap-half);
-  }
-
-  .button {
-    width: 100%;
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 2rem;
-  }
-
-  .subtitle {
-    font-size: 0.9rem;
-  }
-}
-
 .subtitle {
   font-size: 1.25rem;
   color: var(--accents-5);
@@ -122,4 +77,44 @@
 
 .secondaryButton:hover {
   border-color: var(--geist-foreground);
+}
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 4.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--gap-lg, 3rem) var(--gap);
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* Dark mode adjustment for title gradient */
+@media (prefers-color-scheme: dark) {
+  .title {
+    background: linear-gradient(to bottom, #ffffff 0%, #888888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }

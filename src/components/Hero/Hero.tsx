@@ -18,17 +18,17 @@ const Hero = () => {
           Building interfaces that connect design vision with user reality
         </h1>
         <p className={styles.subtitle}>
-          Frontend Developer specializing in TypeScript and React. I transform
-          complex requirements into polished, interactive experiences—working at
-          the intersection of design excellence and technical precision. 5+
-          years building production applications for fintech, marketplaces, and
-          enterprise platforms.
+          Senior front-end engineer specializing in Next.js, TypeScript, and
+          performance optimization with 5 years of production experience.
         </p>
 
         <div className={styles.ctaContainer}>
-          <button className={`${styles.button} ${styles.primaryButton}`}>
+          <a
+            href="mailto:ezekaemmanuel1710@gmail.com"
+            className={`${styles.button} ${styles.primaryButton}`}
+          >
             Contact me <ArrowRight size={16} style={{ marginLeft: "8px" }} />
-          </button>
+          </a>
         </div>
       </motion.div>
     </section>
