@@ -46,7 +46,7 @@ const Technologies = () => {
             design, develop, and deploy scalable digital products.
           </div>
         </SlideUp>
-        <Button className={styles.btn} rightIcon={<ArrowRight color="#fff" />}>
+        <Button onClick={() => window.location.href = "mailto:ezekaemmanuel1710@gmail.com"} className={styles.btn} rightIcon={<ArrowRight color="#fff" />}>
           Let&apos;s build together
         </Button>
       </div>
