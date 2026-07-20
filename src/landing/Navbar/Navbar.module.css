@@ -68,6 +68,7 @@
   position: relative;
   padding-bottom: 4px; /* Give space for the underline */
   border-bottom: 1px solid transparent;
+  transition: color 0.3s ease;
 }
 
 .navUnderline {
@@ -91,6 +92,10 @@
 
 .navUnderlineDot {
   fill: #5c95ff;
+}
+
+.navItem:hover {
+  color: #3c80fd;
 }
 
 .navItem:hover .navUnderline {
