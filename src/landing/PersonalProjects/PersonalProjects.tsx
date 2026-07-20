@@ -5,14 +5,16 @@ import ovBg from "@/assets/overview/image-bg.png";
 import SlideUp from "../SlideUp/SlideUp";
 import Image from "next/image";
 import ProjectCarousel from "@/components/ProjectCarousel/ProjectCarousel";
-import reex1 from "@/assets/projects/reex/reex4.1.png";
-import reex2 from "@/assets/projects/reex/reex2.1.png";
-import reex3 from "@/assets/projects/reex/reex1.1.png";
-import reex4 from "@/assets/projects/reex/reex3.1.png";
-import wetra1 from "@/assets/projects/wetra/ui1.png";
-import wetra2 from "@/assets/projects/wetra/ui2.png";
-import wetra3 from "@/assets/projects/wetra/ui3.png";
-import wetra4 from "@/assets/projects/wetra/ui4.1.png";
+import reex1 from "@/assets/projects/reex/img1.png";
+import reex2 from "@/assets/projects/reex/img2.png";
+import reex3 from "@/assets/projects/reex/img3.png";
+import reex4 from "@/assets/projects/reex/img4.png";
+import reex7 from "@/assets/projects/reex/img7.png";
+import reex8 from "@/assets/projects/reex/img8.png";
+import wetra1 from "@/assets/projects/wetra/img1.png";
+import wetra2 from "@/assets/projects/wetra/img2.png";
+import wetra3 from "@/assets/projects/wetra/img3.png";
+import wetra4 from "@/assets/projects/wetra/img4.png";
 import { ArrowUpRight } from "lucide-react";
 
 const projects = [
@@ -23,7 +25,7 @@ const projects = [
     description:
       "A comprehensive API Client and Builder designed to eliminate manual API integration. It seamlessly generates REST APIs, TanStack Query hooks, and strict TypeScript types directly into your project's codebase, alongside a suite of built-in authentication hooks for a seamless development experience.",
     link: "https://reex-api-builder.toolshq.app/",
-    images: [reex1, reex2, reex3, reex4],
+    images: [reex1, reex2, reex3, reex4, reex7, reex8],
   },
   {
     id: "02",

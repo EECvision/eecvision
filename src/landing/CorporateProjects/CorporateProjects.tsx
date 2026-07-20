@@ -4,17 +4,17 @@ import styles from "./CorporateProjects.module.css";
 import SlideUp from "../SlideUp/SlideUp";
 import ProjectCarousel from "@/components/ProjectCarousel/ProjectCarousel";
 import { ArrowUpRight } from "lucide-react";
-import craftx1 from "@/assets/projects/craftx/ui1.png";
-import craftx2 from "@/assets/projects/craftx/ui2.png";
-import craftx3 from "@/assets/projects/craftx/ui3.png";
-import craftx4 from "@/assets/projects/craftx/ui4.png";
-import orki1 from "@/assets/projects/orki/ui1.png";
-import orki2 from "@/assets/projects/orki/ui2.png";
-import orki3 from "@/assets/projects/orki/ui3.png";
-import orkiMoney1 from "@/assets/projects/orki-money/ui1.png";
-import orkiMoney2 from "@/assets/projects/orki-money/ui2.png";
-import liquidRamp1 from "@/assets/projects/liquidramp/ui1.png";
-import liquidRamp2 from "@/assets/projects/liquidramp/ui2.png";
+import craftx1 from "@/assets/projects/craftx/img1.png";
+import craftx2 from "@/assets/projects/craftx/img2.png";
+import craftx3 from "@/assets/projects/craftx/img3.png";
+import craftx4 from "@/assets/projects/craftx/img4.png";
+import orki1 from "@/assets/projects/orki/img1.png";
+import orki2 from "@/assets/projects/orki/img2.png";
+import orki3 from "@/assets/projects/orki/img3.png";
+import orkiMoney1 from "@/assets/projects/orki-money/img1.png";
+import orkiMoney2 from "@/assets/projects/orki-money/img2.png";
+import liquidRamp1 from "@/assets/projects/liquidramp/img1.png";
+import liquidRamp2 from "@/assets/projects/liquidramp/img2.png";
 
 const projects = [
   {

@@ -13,8 +13,6 @@ Building scalable, high-performance web applications with 5 years of production 
 
 Front-end developer specializing in building scalable, user-focused web applications using React.js, Next.js, and TypeScript. I deliver high-performance UIs for complex, data-rich platforms with seamless API integration and modern front-end tooling.
 
-**Currently:** Lead Frontend Developer at Fracxn, architecting fintech infrastructure serving global users.
-
 **Location:** Remote (Based in Nigeria)
 
 ---
@@ -22,109 +20,99 @@ Front-end developer specializing in building scalable, user-focused web applicat
 ## 🛠️ Tech Stack
 
 **Core Technologies**
+
 - React.js, Next.js, TypeScript, JavaScript
 - HTML5, CSS3, Responsive Design
 
 **State & API Management**
+
 - Redux Toolkit, Zustand
 - TanStack Query, REST APIs, GraphQL
 
 **Testing & Quality**
+
 - Jest, React Testing Library
 - Cypress, Playwright (E2E)
 
 **Build Tools & DevOps**
+
 - Vite, Webpack, npm
 - Git, GitHub Actions, ESLint
 
 **Performance Optimization**
+
 - Core Web Vitals, Lighthouse Audits
 - Code Splitting, Dynamic Imports
 - Bundle Size Optimization
 
 **Backend Integration**
+
 - Firebase, MongoDB
 - Authentication Flows, Real-time Updates
 
 ---
 
-## 💼 Professional Experience
+## 🛠️ Personal Projects
 
-### Lead Frontend Developer @ Fracxn
-*April 2023 - Present*
+### [Reex API Builder](https://reex-api-builder.toolshq.app/)
 
-- Leading front-end development for a fintech platform serving global users with complex workflows
-- Architected an internal API consumption tool that auto-generates TypeScript types, reducing API integration time by **60%**
-- Reduced bundle size by **30%** through dynamic imports and code splitting
-- Improved Core Web Vitals scores by **40%** via optimized lazy loading and performance profiling
-- Built and maintained a scalable component library with comprehensive documentation
-- Implemented automated testing pipelines using Jest, React Testing Library, and GitHub Actions
+**API Client and Builder**
 
-**Tech Stack:** Next.js, TypeScript, TanStack Query, Redux Toolkit, Jest, Vite
+A comprehensive API Client and Builder designed to eliminate manual API integration. It seamlessly generates REST APIs, TanStack Query hooks, and strict TypeScript types directly into your project's codebase, alongside a suite of built-in authentication hooks for a seamless development experience.
 
-### Software Engineer (Full-Stack) @ Minority Programmers
-*August 2021 - September 2022*
-
-- Developed a full-stack marketplace platform (Genadrop) with complex data management and real-time features
-- Built responsive UI components ensuring pixel-perfect implementation from design mockups
-- Implemented secure authentication flows and user session management using Firebase
-- Optimized application performance through lazy loading and efficient state management
-
-**Tech Stack:** React.js, JavaScript, Firebase, GraphQL, Jest, Cypress
-
-### Technical Lead & Interview Engineer @ VisionVoice, Inc.
-*July 2022 - February 2023*
-
-- Mentored 20+ candidates on JavaScript, algorithms, React.js, and front-end best practices
-- Conducted technical and behavioral interviews evaluating problem-solving and coding skills
-- Assessed competency in modern front-end frameworks and testing practices
+**Stack:** Next.js, TypeScript, React
 
 ---
 
-## 🚀 Featured Projects
+### [Wetra](https://wetra.app/)
 
-### [Fracxn](https://fracxn.com)
-**B2B Fintech & Lending Infrastructure Platform**
+**AI-Powered Menstrual Cycle Tracking App**
 
-Leading frontend development for an enterprise platform serving invoice factoring, receivables financing, and embedded finance solutions. Built scalable digital infrastructure enabling businesses to integrate financial services.
+An AI-powered, WhatsApp-based menstrual cycle tracking application. It allows users to converse naturally with an AI assistant to log their periods, receive personalized health insights, manage subscriptions, and access detailed reports directly within their messaging app.
 
-**Stack:** Next.js, TypeScript, TanStack Query, Redux Toolkit
-
----
-
-### [Genadrop](https://genadrop.io)
-**Digital Asset Creation & Marketplace Platform**
-
-Developed an asset generation tool with automated rarity calculation from layered artwork components. Built a generative system combining multiple design elements into unique digital collectibles with integrated marketplace functionality.
-
-**Stack:** React.js, JavaScript, Firebase, GraphQL
+**Stack:** Next.js, TypeScript, AI Integrations
 
 ---
 
-### [Shukria](https://mercury-payout-dev.fracxn.com)
-**Enterprise Payroll Automation & Payment Platform**
+## 💼 Corporate Projects and Professional Experience
 
-Developed an automated disbursement system with employee payment management and comprehensive admin dashboard. Implemented risk mitigation features, compliance monitoring, and real-time payment processing with detailed reporting.
+### [CraftX](https://www.craftxai.ai/)
 
-**Stack:** React, TypeScript, Node.js
-<!--
+**Operational AI Infrastructure**
+
+An operational AI infrastructure for fit-out and construction intelligence. It transforms fragmented project inputs into a unified model, enabling teams to govern data, automate workflows, and control execution across the entire lifecycle.
+
+**Stack:** Next.js, TypeScript, React
+
 ---
 
-### [Orki](https://money.orki.io)
-**Payment Gateway & Financial Transaction Platform**
+### [LiquidRamp](https://www.liquidramp.io/)
 
-Building multi-currency payment infrastructure for seamless money transfer and currency conversion. Developed merchant payment collection system with integrated dashboards and secure transaction processing.
+**Global Money Movement Infrastructure**
 
-**Stack:** React, TypeScript
--->
+A non-custodial infrastructure powering global money movement. It enables seamless conversion between stablecoins and local currencies while offering programmable, liquidity-driven earnings.
+
+**Stack:** Next.js, TypeScript, React
+
 ---
 
-### [Fracxn Carbon](https://carbon.fracxn.com)
-**Carbon Footprint Management & Offset Marketplace**
+### [Orki](https://orki.io/)
 
-Built an environmental impact calculator with integrated carbon credit marketplace. Enabled users to measure emissions, purchase verified offsets, and earn sustainability certificates with transparent tracking.
+**Stablecoin Neobank**
 
-**Stack:** Next.js, TypeScript
+A stablecoin neobank for global payments. Accept payments, manage your wallet, and spend globally using stablecoins on a single platform that replaces your payment gateway, bank, and cards.
+
+**Stack:** Next.js, TypeScript, React
+
+---
+
+### [Orki Money](https://money.orki.io/)
+
+**Fiat-to-Crypto Onramp**
+
+An optimized fiat-to-crypto onramp solution. It maximizes conversion and revenue for Web3 platforms, providing up to 20x more global coverage compared to single-provider alternatives.
+
+**Stack:** Next.js, TypeScript, React
 
 ---
 
