@@ -5,6 +5,7 @@
 Building scalable, high-performance web applications with 5 years of production experience.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/emmanuel-ezeka-027728163/)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black)](https://github.com/EECvision)
 [![Email](https://img.shields.io/badge/Email-Contact-red)](mailto:ezekaemmanuel1710@gmail.com)
 
 ---
@@ -47,8 +48,14 @@ Front-end developer specializing in building scalable, user-focused web applicat
 
 **Backend Integration**
 
-- Firebase, MongoDB
+- Firebase, MongoDB, PostgreSQL, Supabase
 - Authentication Flows, Real-time Updates
+
+**AI Integrations**
+
+- Large Language Models (LLMs), Prompt Engineering
+- AI-Powered Chatbots & Conversational Interfaces
+- API Integrations (OpenAI, Anthropic, etc.)
 
 ---
 
@@ -131,6 +138,7 @@ An optimized fiat-to-crypto onramp solution. It maximizes conversion and revenue
 
 - **Email:** [ezekaemmanuel1710@gmail.com](mailto:ezekaemmanuel1710@gmail.com)
 - **LinkedIn:** [emmanuel-ezeka](https://www.linkedin.com/in/emmanuel-ezeka-027728163/)
+- **GitHub:** [EECvision](https://github.com/EECvision)
 - **Phone:** +234 806 481 9800
 
 ---
