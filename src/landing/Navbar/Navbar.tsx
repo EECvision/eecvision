@@ -43,6 +43,7 @@ const Navbar = () => {
                   href={navItem.url}
                   className={styles.navItem}
                   key={idx}
+                  onClick={() => setOpenNav(false)}
                   {...(navItem.isDownload
                     ? { target: "_blank", download: true }
                     : {})}
