@@ -26,13 +26,13 @@
   align-items: center;
   gap: 8px;
   z-index: 101;
+  color: var(--accents-5);
   /* Ensure logo stays above mobile menu */
 }
 
 .logoIcon {
   width: 24px;
   height: 24px;
-  background: var(--geist-foreground);
   border-radius: 50%;
   position: relative;
   display: flex;

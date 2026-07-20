@@ -1,0 +1,83 @@
+import React from "react";
+
+export default function ThickLineVertical(
+  props: React.SVGProps<SVGSVGElement>,
+) {
+  return (
+    <svg
+      width="8"
+      height="26"
+      viewBox="0 0 8 26"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <rect
+        x="7.5"
+        y="3.27836e-07"
+        width="24"
+        height="7.5"
+        rx="2"
+        transform="rotate(90 7.5 3.27836e-07)"
+        fill="#D8D7DF"
+        fillOpacity="0.4"
+      />
+      <g filter="url(#filter0_d_536_2470)">
+        <rect
+          x="6"
+          y="2"
+          width="20"
+          height="4"
+          rx="0.947368"
+          transform="rotate(90 6 2)"
+          fill="#E4E5E8"
+          fillOpacity="0.1"
+          shapeRendering="crispEdges"
+        />
+      </g>
+      <defs>
+        <filter
+          id="filter0_d_536_2470"
+          x="1.04907e-06"
+          y="2"
+          width="8"
+          height="24"
+          filterUnits="userSpaceOnUse"
+          colorInterpolationFilters="sRGB"
+        >
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
+          <feColorMatrix
+            in="SourceAlpha"
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+            result="hardAlpha"
+          />
+          <feOffset dy="2" />
+          <feGaussianBlur stdDeviation="1" />
+          <feComposite in2="hardAlpha" operator="out" />
+          <feColorMatrix
+            type="matrix"
+            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.18 0"
+          />
+          <feBlend
+            mode="normal"
+            in2="BackgroundImageFix"
+            result="effect1_dropShadow_536_2470"
+          />
+          <feBlend
+            mode="normal"
+            in="BackgroundImageFix"
+            in2="effect1_dropShadow_536_2470"
+            result="BackgroundImageFix"
+          />
+          <feBlend
+            mode="normal"
+            in="SourceGraphic"
+            in2="BackgroundImageFix"
+            result="shape"
+          />
+        </filter>
+      </defs>
+    </svg>
+  );
+}

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import Link from "next/link";
+import Image from "next/image";
 import { Download } from "lucide-react";
+import logoImage from "@/assets/emmanuel_ezeka.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +17,12 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>
-        <div className={styles.logoIcon} />
+        <Image
+          src={logoImage}
+          alt="Emmanuel Ezeka"
+          className={styles.logoIcon}
+          style={{ objectFit: "cover" }}
+        />
         EECvision
       </div>
 

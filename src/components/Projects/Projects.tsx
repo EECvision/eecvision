@@ -1,7 +1,9 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./Projects.module.css";
 import GlassCard from "../GlassCard/GlassCard";
 import { ArrowUpRight } from "lucide-react";
+import projectMockup from "@/assets/project_mockup.png";
 
 const projects = [
   {
@@ -59,7 +61,7 @@ const Projects = () => {
             className={styles.projectCard}
             hoverEffect={true}
           >
-            <div>
+            <div className={styles.content}>
               <h3 className={styles.projectTitle}>{project.title}</h3>
               <p className={styles.projectDescription}>{project.description}</p>
               <div className={styles.techStack}>
@@ -69,14 +71,21 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+              <a
+                href={project.link}
+                target="_blank"
+                className={styles.projectLink}
+              >
+                View Project <ArrowUpRight size={14} />
+              </a>
             </div>
-            <a
-              href={project.link}
-              target="_blank"
-              className={styles.projectLink}
-            >
-              View Project <ArrowUpRight size={14} />
-            </a>
+            <div className={styles.imageSection}>
+              <Image 
+                src={projectMockup} 
+                alt={`${project.title} preview`} 
+                className={styles.projectImage} 
+              />
+            </div>
           </GlassCard>
         ))}
       </div>

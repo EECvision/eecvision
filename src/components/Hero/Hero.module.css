@@ -23,11 +23,24 @@
   font-weight: 800;
   letter-spacing: -0.05em;
   margin-bottom: var(--gap);
-  background: linear-gradient(to bottom, #000000 0%, #666666 100%);
+  line-height: 1.2;
+}
+
+.char {
+  background: linear-gradient(
+    90deg,
+    var(--geist-foreground),
+    var(--accents-5),
+    var(--accents-2),
+    var(--accents-5),
+    var(--geist-foreground)
+  );
+  background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  line-height: 1.2;
+  padding: 0.1em;
+  margin: -0.1em;
 }
 
 .subtitle {
@@ -44,39 +57,58 @@
   gap: var(--gap);
 }
 
-.button {
-  height: 48px;
-  padding: 0 24px;
+.spotlightButton {
+  position: relative;
+  display: inline-flex;
   border-radius: var(--radius);
-  font-weight: 500;
-  font-size: 1rem;
-  transition: all 0.2s ease;
+  padding: 2px;
+  text-decoration: none;
+  overflow: hidden;
+  background: var(--accents-2);
   cursor: pointer;
+}
+
+.spotlightBorder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  aspect-ratio: 1;
+  z-index: 0;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    transparent 12.5%,
+    var(--accents-5) 25%,
+    var(--geist-foreground) 40%,
+    var(--geist-success) 50%,
+    var(--geist-foreground) 60%,
+    var(--accents-5) 75%,
+    transparent 87.5%,
+    transparent 100%
+  );
+}
+
+.spotlightButton:hover .spotlightBorder {
+  opacity: 1; /* Keep it fully visible if you want, or change to make it glow brighter */
+}
+
+.spotlightContent {
+  position: relative;
+  z-index: 1;
+  background: var(--geist-background);
+  color: var(--geist-foreground);
+  border-radius: calc(var(--radius) - 2px);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-}
-
-.primaryButton {
-  background: var(--geist-foreground);
-  color: var(--geist-background);
-  border: 1px solid var(--geist-foreground);
-}
-
-.primaryButton:hover {
-  background: transparent;
-  color: var(--geist-foreground);
-}
-
-.secondaryButton {
-  background: var(--geist-background);
-  color: var(--geist-foreground);
-  border: 1px solid var(--accents-2);
-}
-
-.secondaryButton:hover {
-  border-color: var(--geist-foreground);
+  height: 48px;
+  padding: 0 24px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
 }
 
 @media (max-width: 1024px) {

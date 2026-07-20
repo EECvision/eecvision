@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  max-width: 1280px;
+}
+
+@media screen and (max-width: calc(1280px + 48px)) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: calc(1200px + 48px)) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (max-width: calc(1024px + 48px)) {
+  .container {
+    max-width: 834px;
+  }
+}
+
+@media screen and (max-width: calc(834px + 48px)) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: calc(768px + 48px)) {
+  .container {
+    max-width: 580px;
+  }
+}

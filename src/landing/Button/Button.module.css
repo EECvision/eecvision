@@ -1,0 +1,142 @@
+.container {
+  position: relative;
+  display: inline-flex;
+  padding: 1.5px;
+  border-radius: 12px;
+  cursor: pointer;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  transition: all 300ms;
+}
+
+.primaryContainer {
+  background: #3c80fd; /* Original primary border color */
+  box-shadow:
+    0 0 0 4px rgba(92, 149, 255, 0.15),
+    0 0 2px 0.4px rgba(0, 0, 0, 0.3);
+}
+
+.secondaryContainer {
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow:
+    0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 2px 0.4px #9d9afa;
+}
+
+.container:active .contentWrapper {
+  transform: scale(0.97);
+}
+
+.spotlightBorder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300%;
+  aspect-ratio: 1;
+  z-index: 0;
+  pointer-events: none;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    transparent 30%,
+    rgba(255, 255, 255, 0.9) 45%,
+    #ffffff 50%,
+    rgba(255, 255, 255, 0.9) 55%,
+    transparent 70%,
+    transparent 100%
+  );
+  opacity: 0; /* Hidden by default */
+}
+
+@keyframes sweepAndFade {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animating {
+  animation: sweepAndFade 1.5s linear forwards;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px; /* 12px - 2px */
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: all 300ms;
+}
+
+.contentWrapper > * {
+  position: relative;
+  z-index: 10;
+}
+
+.contentWrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+/* ========================= */
+/* PRIMARY */
+/* ========================= */
+
+.primary {
+  background: linear-gradient(180deg, #5c95ff 0%, #377bfa 100%);
+  background: linear-gradient(180deg, #377bfa 50%, #2a6ce8 100%);
+
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+  color: #fff;
+}
+
+.primary::after {
+  background: linear-gradient(180deg, #377bfa 50%, #2a6ce8 100%);
+}
+
+.container:hover .primary::after {
+  opacity: 1;
+}
+
+/* ========================= */
+/* SECONDARY */
+/* ========================= */
+
+.secondary {
+  background: linear-gradient(180deg, #fff 32.21%, #e3e4f8 100%);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
+  color: #5c95ff;
+}
+
+.secondary::after {
+  background: linear-gradient(180deg, #f8f8ff 0%, #d7daf7 100%);
+}
+
+.container:hover .secondary::after {
+  opacity: 1;
+}

@@ -1,0 +1,142 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding: 72px 0;
+  min-height: calc(100vh - 80px);
+  position: relative;
+}
+
+.header {
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 73px;
+  letter-spacing: 1.68px;
+  margin-bottom: 24px;
+}
+
+.header span {
+  background: linear-gradient(
+    110deg,
+    #5c95ff 0%,
+    #5c95ff 45%,
+    #ffffff 50%,
+    #5c95ff 55%,
+    #5c95ff 100%
+  );
+  background-size: 300% auto;
+  background-position: 100% center;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmerSweep 7s cubic-bezier(0.25, 0.1, 0.25, 1) 0.5s forwards;
+}
+
+@keyframes shimmerSweep {
+  0% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
+.subHeader {
+  color: #6a6a6a;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 175% */
+  letter-spacing: 0.48px;
+}
+
+.tag {
+  position: absolute;
+  color: #c8c0c5;
+  text-align: center;
+  font-family: "Geist Mono";
+  font-size: var(--font-size-12, 12px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--font-size-16, 16px);
+}
+
+.tag1 {
+  left: 0;
+  top: 0;
+  transform: translateX(-20%);
+}
+
+.tag2 {
+  bottom: 4px;
+  left: 0;
+  transform: translateX(-20%);
+}
+
+.tag3 {
+  right: 0;
+  top: 0;
+  transform: translateX(20%);
+}
+
+.tag4 {
+  bottom: 4px;
+  right: 0;
+  transform: translateX(20%);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 64px 0;
+    gap: 28px;
+  }
+
+  .header {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 52px;
+    letter-spacing: 1.2px;
+    margin-bottom: 16px;
+  }
+
+  .subHeader {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.45px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    padding: 48px 0;
+    gap: 24px;
+  }
+
+  .header {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0.72px;
+    margin-bottom: 7px;
+  }
+
+  .subHeader {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+  }
+
+  .tag {
+    display: none;
+  }
+}

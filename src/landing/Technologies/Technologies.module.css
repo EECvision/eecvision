@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  border-top: 1px dashed #d1d1d1;
+  border-bottom: 1px dashed #d1d1d1;
+
+  background: #f7f7f7;
+}
+
+.details {
+  padding: 64px 55px 59px 73px;
+  width: 100%;
+  max-width: 670px;
+}
+
+.title {
+  color: #1a1a1a;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 1.08px;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: #959595;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.48px;
+  margin-bottom: 44px;
+}
+
+.image {
+  flex: 1;
+  background: #fff;
+}
+
+.btn {
+  min-width: 191px;
+  min-height: 52px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 139.75px;
+  height: 128.659px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.cell:nth-child(8n + 2),
+.cell:nth-child(8n + 4),
+.cell:nth-child(8n + 5),
+.cell:nth-child(8n + 7) {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    padding-bottom: 58px;
+  }
+
+  .details {
+    padding: 50px 36px;
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.9px;
+    margin-bottom: 11px;
+  }
+
+  .description {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.45px;
+    margin-bottom: 36px;
+  }
+
+  .btn {
+    min-width: 168px;
+    min-height: 43px;
+  }
+
+  .cell {
+    width: auto;
+    height: 108px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .container {
+    flex-direction: column;
+    padding-bottom: 58px;
+  }
+
+  .details {
+    padding: 38px 18px;
+  }
+
+  .title {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.72px;
+    margin-bottom: 6px;
+  }
+
+  .description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    margin-bottom: 28px;
+  }
+
+  .btn {
+    min-width: 146px;
+    min-height: 34px;
+  }
+
+  .cell {
+    width: auto;
+    height: 88px;
+  }
+}

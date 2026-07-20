@@ -1,7 +1,7 @@
 .wrapper {
   position: relative;
   z-index: 1;
-  margin-bottom: 272px;
+  /* margin-bottom: 272px; */
 }
 
 .container {
@@ -9,7 +9,7 @@
 }
 
 .footerWrapper {
-  height: 274px;
+  height: 320px;
   width: 100%;
   background: transparent;
 }

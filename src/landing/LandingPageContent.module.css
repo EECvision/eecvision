@@ -1,0 +1,77 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  /* Ported Next.js Globals */
+  color: #1a1a1a;
+  font-family: "Geist", sans-serif;
+  /* animation: open 2s forwards; */
+}
+
+.container * {
+  transition: all 300ms;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.innerContainer {
+  width: 100%;
+  /* padding: 0 24px; */
+}
+
+.lineSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px dashed #d1d1d1;
+  border-top-color: transparent;
+  padding-top: 74px;
+  width: 100%;
+  max-width: max-content;
+}
+
+.spacer88 {
+  height: 88px;
+}
+
+.spacer74 {
+  height: 74px;
+}
+
+.spacer64 {
+  height: 64px;
+}
+
+.spacer174 {
+  height: 174px;
+}
+
+@media screen and (max-width: 580px) {
+  .lineSection {
+    padding: 0 12px;
+    padding-top: 41px;
+  }
+
+  .spacer174 {
+    height: 98px;
+  }
+
+  .spacer88,
+  .spacer74,
+  .spacer64 {
+    height: 48px;
+  }
+}
